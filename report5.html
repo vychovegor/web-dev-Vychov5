@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Questions and Answers</title>
+    <style>
+        /* CSS styles for enhanced readability */
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            padding: 20px;
+            margin: 0;
+        }
+
+        main {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        article {
+            max-width: 800px;
+        }
+
+        section {
+            margin-bottom: 40px;
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        p {
+            margin-bottom: 20px;
+        }
+
+        img {
+            display: block;
+            margin: 0 auto;
+            max-width: 100%;
+            height: auto;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        nav {
+            margin-bottom: 20px;
+        }
+
+        nav a {
+            padding: 5px 10px;
+            text-decoration: none;
+            color: #333;
+        }
+
+        nav a:hover {
+            background-color: #f0f0f0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>CSS Questions and Answers</h1>
+        <nav>
+            <a href="#box_model">Box Model</a>
+            <a href="#clearfix">Clearfix Hack</a>
+            <a href="#margin_collapse">Margin Collapse</a>
+            <a href="#holy_grail_layout">Holy Grail Layout</a>
+            <a href="#modern_holy_grail_layout">Modern Holy Grail Layout</a>
+        </nav>
+    </header>
+
+    <main>
+        <article>
+            <section id="box_model">
+                <h2>What is a box model in CSS?</h2>
+                <p>The CSS box model describes the space that surrounds each HTML element. It consists of content, padding, border, and margin. The <code>box-sizing</code> property defines how the width and height of an element are calculated, taking into account the padding and border, or just the content area.</p>
+                <img src="https://media.geeksforgeeks.org/wp-content/uploads/box-model-1.png" alt="CSS Box Model">
+            </section>
+
+            <section id="clearfix">
+                <h2>What is a “clearfix hack” and when does it need to be applied?</h2>
+                <p>A clearfix hack is a technique used to contain floats within a container. It's applied when a parent element does not fully expand to contain its floated children. This typically happens when the children are floated and the parent has no height or collapsed height.</p>
+                <img src="https://www.tutorialspoint.com/css/images/clearfix.png" alt="Clearfix Hack">
+            </section>
+
+            <section id="margin_collapse">
+                <h2>What is a “margin collapse” and what are the use cases for margin: auto and negative margin values?</h2>
+                <p>Margin collapse occurs when the vertical margins of two adjacent elements overlap, collapsing into a single margin. This commonly happens between siblings or a parent and its first/last child. The <code>margin: auto;</code> property is used to horizontally center an element within its container, while negative margin values can be used to create overlapping or visually interesting layouts.</p>
+                <img src="https://miro.medium.com/v2/resize:fit:535/1*irihT0essp7Rs2cqtHxyQw.png" alt="Margin Collapse">
+            </section>
+
+            <section id="holy_grail_layout">
+                <h2>What was the problem with achieving Holy Grail layout?</h2>
+                <p>The Holy Grail layout is a classic web design pattern that consists of a header, footer, and three columns of content, with the center column being the main content and the side columns being of equal height. The problem with achieving this layout traditionally was making all columns equal height without resorting to non-semantic markup or JavaScript hacks.</p>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/HolyGrail.svg/1200px-HolyGrail.svg.png" alt="Holy Grail Layout">
+            </section>
+
+            <section id="modern_holy_grail_layout">
+                <h2>What are the modern ways to achieve Holy Grail layout?</h2>
+                <p>Modern ways to achieve the Holy Grail layout include using Flexbox or CSS Grid layout. Flexbox allows for easy alignment and distribution of elements along a single axis or multiple axes, while CSS Grid provides a powerful grid-based layout system for more complex designs.</p>
+                <img src="https://cdn.matthewjamestaylor.com/titles/holy-grail-3-column-responsive-layout-diagram.png" alt="Modern Holy Grail Layout">
+            </section>
+        </article>
+    </main>
+
+    <footer>
+        <p>Created by [Egor] | [Vychov] | Date: [June], [11] | Place: [Grodno]</p>
+        <ul>
+            <li><a href="#">Link 1</a></li>
+            <li><a href="#">Link 2</a></li>
+            <li><a href="#">Link 3</a></li>
+        </ul>
+    </footer>
+</body>
+</html>
+
